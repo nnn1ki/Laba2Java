@@ -31,10 +31,10 @@ public class Main {
 
                 Text userline = new Text(UserInput);
 
-                //System.out.println("a. определить число предложений в тексте: " + userline.numberSentences());
-                //System.out.println("b. найти самое часто встречающееся слово в тексте: " + userline.popularWord());
+                System.out.println("a. определить число предложений в тексте: " + userline.numberSentences());
+                System.out.println("b. найти самое часто встречающееся слово в тексте: " + userline.popularWord());
 
-                //System.out.println("c. определить число слов в предложении, которые начинаются с гласной/согласной буквы: " + userline.vowelOrConsonant());
+                userline.vowelOrConsonant();
 
             }
 
