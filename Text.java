@@ -60,16 +60,24 @@ public class Text {
 
 
     public void vowelOrConsonant(){
-        String vowelLetter = "уеэоаыяи"; //гласные
+        String vowelLetters = "eyuioa"; //гласные
         int vowInt = 0;
         int conInt = 0;
 
         for (int i = 0; i < words.length; i++){ // идем по псловам
-            for(int j = 0; j < vowelLetter.length(); j++){ // идем по буквам
-                if (words[i].charAt(0) == vowelLetter.charAt(j)){
+            for(int j = 0; j < vowelLetters.length(); j++){ // идем по буквам
+
+                Character chA = words[i].charAt(0);
+                Character chB = vowelLetters.charAt(j);
+
+                if (chA.compareTo(chB) == 0){
                     vowInt++;
+                    break;
                 }
-                else conInt++;
+                else {
+                    conInt++;
+                    break;
+                }
             }
         }
 
